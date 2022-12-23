@@ -1538,6 +1538,45 @@ body {
   .swiper {
     display: block;
   }
+       .main-product .product-details .pd-heading {
+        padding-left: 2rem;
+    }
+    .main-product .product-details .pd-price p {
+        
+        padding-left: 2rem;
+    }
+    .main-product .product-details .pd-off {
+
+        padding-left: 2rem;
+    }
+    .main-product .product-details .pd-tabby {
+        margin-left: 2rem;
+    }
+    .main-product .product-details .pd-size .size-h .all-size-btn {
+        padding-left: 2rem;
+    }
+    .main-product .product-details .quantity p {
+        margin-left: 2.1rem;
+        
+    }
+    .main-product .product-details .quantity .sign {
+        margin-left: 2rem;
+    }
+    .main-product .product-details .delivery {
+        margin-left: 2rem;
+     
+    }
+    .main-product .product-details .description,
+    .main-product .product-details .delivery-return
+     {
+
+        margin-left: 2rem;
+   
+    }
+    .main-product .product-details .promise .p-heading h3 {
+        margin-left: 2rem;
+
+    }
 }
 @media only screen and (max-width: 750px) {
   .header-section {
@@ -1610,6 +1649,7 @@ body {
   .top-for-mbl {
     display: block;
   }
+  
 }
 @media only screen and (max-width: 700px) {
   .swiper-slide img {
