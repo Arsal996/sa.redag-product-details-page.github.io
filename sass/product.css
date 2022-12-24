@@ -1319,6 +1319,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
   z-index: 10;
   padding: 2rem 4rem;
   justify-content: center;
@@ -1531,6 +1532,7 @@ body {
   }
   .main-product .product-details {
     width: 100%;
+    padding-left: 3rem;
   }
   .main-product .product-img {
     display: none;
@@ -1538,45 +1540,6 @@ body {
   .swiper {
     display: block;
   }
-       .main-product .product-details .pd-heading {
-        padding-left: 2rem;
-    }
-    .main-product .product-details .pd-price p {
-        
-        padding-left: 2rem;
-    }
-    .main-product .product-details .pd-off {
-
-        padding-left: 2rem;
-    }
-    .main-product .product-details .pd-tabby {
-        margin-left: 2rem;
-    }
-    .main-product .product-details .pd-size .size-h .all-size-btn {
-        padding-left: 2rem;
-    }
-    .main-product .product-details .quantity p {
-        margin-left: 2.1rem;
-        
-    }
-    .main-product .product-details .quantity .sign {
-        margin-left: 2rem;
-    }
-    .main-product .product-details .delivery {
-        margin-left: 2rem;
-     
-    }
-    .main-product .product-details .description,
-    .main-product .product-details .delivery-return
-     {
-
-        margin-left: 2rem;
-   
-    }
-    .main-product .product-details .promise .p-heading h3 {
-        margin-left: 2rem;
-
-    }
 }
 @media only screen and (max-width: 750px) {
   .header-section {
@@ -1649,7 +1612,6 @@ body {
   .top-for-mbl {
     display: block;
   }
-  
 }
 @media only screen and (max-width: 700px) {
   .swiper-slide img {
@@ -1670,6 +1632,9 @@ body {
   .add-to-cart {
     display: none;
   }
+  .main-product .product-details {
+    padding-left: 2rem;
+  }
   .main-product .product-details .mbl-cart-btn {
     display: block;
   }
@@ -1680,8 +1645,30 @@ body {
 @media only screen and (max-width: 450px) {
   .swiper-slide img {
     width: 100%;
-    height: 560px;
+    height: 575px;
     margin-top: 0;
+  }
+  .main-product .product-details {
+    padding-left: 1rem;
+  }
+  .main-product .product-details .pd-heading p {
+    font-size: 1.4rem;
+  }
+  .main-product .product-details .pd-price p {
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+  }
+  .main-product .product-details .quantity p {
+    margin-left: 1.2rem;
+  }
+  .main-product .product-details .quantity .sign {
+    margin-left: 1.2rem;
+  }
+  .main-product .product-details .pd-price p span {
+    font-size: 1.6rem;
+  }
+  .main-product .product-details .pd-off {
+    margin-top: 1.6rem;
   }
   .main-product .product-details .pd-heading {
     width: 94%;
