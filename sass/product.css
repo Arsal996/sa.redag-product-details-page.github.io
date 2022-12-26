@@ -1653,7 +1653,8 @@ body {
     margin-top: 0;
   }
   .main-product .product-details {
-    padding-left: 1rem;
+    padding-left: .7rem;
+    padding-bottom: 3rem;
   }
   .main-product .product-details .pd-heading p {
     font-size: 1.4rem;
@@ -1699,7 +1700,5 @@ body {
 .main-product .product-details .delivery-return {
     width: 94%;
   }
-  .main-product .product-details {
-    padding-bottom: 3rem;
-  }
+
 }/*# sourceMappingURL=product.css.map */
