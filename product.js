@@ -270,3 +270,22 @@ var swiper = new Swiper(".mySwiper", {
       dynamicBullets: true,
     },
   });
+
+// for slider change images
+  
+ var bigImg1 = document.getElementById('big-img');
+ var smallImg1 = document.getElementsByClassName('small-img');
+
+ smallImg1[0].onclick = function(){
+    bigImg1.src = smallImg1[0].src;
+    smallImg1.style.display = "none";
+ }
+ smallImg1[1].onclick = function(){
+    bigImg1.src = smallImg1[1].src;
+ }
+ smallImg1[2].onclick = function(){
+    bigImg1.src = smallImg1[2].src;
+ }
+ smallImg1[3].onclick = function(){
+    bigImg1.src = smallImg1[3].src;
+ }
