@@ -328,16 +328,22 @@ body {
             margin: 9rem 0 0 2rem;
             gap: 1rem;
 
+            .small-img{
+                border: 2px solid black;
+            }
+
             img{
                 width: 90px;
                 height: 136px;
+                cursor: pointer;
             }
         }
-        .big-img{
+         .big-imgs{
             margin-top: 4rem;
 
             img{
                 width: 94%;
+            
             }
         }
     }
