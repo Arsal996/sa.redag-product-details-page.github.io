@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Noto+Sans:wght@300;400;600&family=Quicksand:wght@300;500;600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Ubuntu:wght@300&family=Work+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Jost:wght@600&family=La+Belle+Aurore&family=Montserrat:wght@300;400&family=Noto+Sans:wght@300;400;600&family=Quicksand:wght@300;500;600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Ubuntu:wght@300&family=Work+Sans:wght@900&display=swap");
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -1092,6 +1092,110 @@ body {
   margin: 0.2rem;
 }
 
+#size-chart {
+  background: #fff;
+  position: fixed;
+  top: 20px;
+  width: 60%;
+  left: 23rem;
+  z-index: 112;
+  display: none;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 3px 2px 100vw rgba(0, 0, 0, 0.4);
+}
+#size-chart .header-sc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #3a3a3a;
+}
+#size-chart .header-sc .sc-heading {
+  text-align: center;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+#size-chart .header-sc .sc-heading h4 {
+  font-size: 1.3rem;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+#size-chart .header-sc .sc-heading p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+#size-chart .header-sc #close {
+  margin-top: 1.6rem;
+  font-size: 2rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+#size-chart .cm-inches {
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+}
+#size-chart .cm-inches .cm {
+  color: rgb(67, 175, 218);
+}
+#size-chart .cm-inches p {
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+#size-chart .cm-inches p:hover {
+  color: rgb(67, 175, 218);
+}
+#size-chart .size-table {
+  width: 96%;
+  margin-left: 1.5rem;
+}
+#size-chart .size-table th {
+  border: 1px solid #dfdfdf;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(255, 203, 221);
+}
+#size-chart .size-table td {
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+#size-chart .size-imgs {
+  margin-top: 0.6rem;
+  margin-left: 1.5rem;
+}
+#size-chart .size-imgs .desc {
+  display: flex;
+}
+#size-chart .size-imgs .desc label {
+  font-size: 1.1rem;
+  padding: 1.2rem 0 1rem 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #dfdfdf;
+  height: 50px;
+  width: 240px;
+  border-right: none;
+}
+#size-chart .size-imgs .desc .foot-img {
+  border: 1px solid #dfdfdf;
+  margin-right: 1.6rem;
+}
+#size-chart .size-imgs .desc .foot-img p {
+  padding: 1.2rem 0 1.4rem 1rem;
+  font-size: 1.2rem;
+  border-left: none;
+}
+#size-chart .size-imgs .desc .foot-img img {
+  width: 95%;
+  padding-left: 1rem;
+}
+
 .main-product {
   display: flex;
 }
@@ -1363,16 +1467,66 @@ body {
 }
 .main-product .product-details .delivery .date {
   display: flex;
+  align-items: center;
 }
 .main-product .product-details .delivery .date p {
   font-weight: 500;
   color: #a0a0a0;
   font-size: 1.2rem;
 }
-.main-product .product-details .delivery .date svg {
-  width: 17px;
-  height: 17px;
+.main-product .product-details .delivery .date i {
+  font-size: 1.5rem;
+  color: #a0a0a0;
   margin-left: 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  rotate: 180deg;
+}
+.main-product .product-details #delivery-policy {
+  background-color: #fff;
+  height: 100vh;
+  z-index: 111;
+  position: fixed;
+  width: 44rem;
+  top: 0;
+  right: 0;
+  padding: 3rem 0 0 1.4rem;
+  box-shadow: 0 3px 2px 100vw rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.main-product .product-details #delivery-policy .heading-c {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 1rem 0 1.5rem 0.1rem;
+  width: 88%;
+  margin-left: 2rem;
+}
+.main-product .product-details #delivery-policy .heading-c h3 {
+  font-size: 2.4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-product .product-details #delivery-policy .heading-c .fa-xmark {
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+.main-product .product-details #delivery-policy .dp-all-content {
+  padding: 2.5rem;
+  height: 40rem;
+  overflow-y: scroll;
+}
+.main-product .product-details #delivery-policy .dp-all-content li {
+  font-size: 14.2px;
+  line-height: 1.8rem;
+  margin: 0.3rem 1rem 0 1rem;
+  text-align: left;
+  font-weight: 500;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.main-product .product-details #delivery-policy .dp-all-content .customer-care {
+  font-size: 1.1rem;
+  margin-top: 1.7rem;
+  padding-bottom: 2rem;
 }
 .main-product .product-details .description {
   width: 92%;
@@ -1526,13 +1680,16 @@ body {
   color: #a0a0a0;
 }
 
+#size-chart {
+  left: 20rem;
+}
+
 @media only screen and (max-width: 990px) {
   .main-product {
     flex-direction: column;
   }
   .main-product .product-img {
     width: 100%;
-    background-color: #90EE90;
   }
   .main-product .product-details {
     width: 100%;
@@ -1543,6 +1700,10 @@ body {
   }
   .swiper {
     display: block;
+  }
+  #size-chart {
+    left: 12rem;
+    width: 70%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -1557,7 +1718,8 @@ body {
     height: 850px;
     margin-top: 0;
   }
-  .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transition: 0.2s transform, 0.2s left;
     background-color: black;
     font-size: 3rem;
@@ -1616,12 +1778,26 @@ body {
   .top-for-mbl {
     display: block;
   }
+  #size-chart {
+    left: 4rem;
+    width: 85%;
+  }
 }
 @media only screen and (max-width: 700px) {
   .swiper-slide img {
     width: 100%;
     height: 700px;
     margin-top: 0;
+  }
+  #size-chart {
+    left: 0.5rem;
+    width: 97%;
+  }
+  #size-chart .size-table th {
+    font-size: 1rem;
+  }
+  #size-chart .size-table td {
+    font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1645,6 +1821,23 @@ body {
   .main-product .product-details .delivery {
     margin-top: 3rem;
   }
+  .main-product .product-details #delivery-policy {
+    height: 90vh;
+    top: 72px;
+    width: 100vw;
+    border-radius: 20px 20px 0 0;
+    padding: 1.5rem 0 0 1rem;
+  }
+  #size-chart .size-imgs .desc {
+    padding-bottom: 2rem;
+  }
+  #size-chart {
+    top: 10px;
+  }
+  #size-chart .size-table {
+    width: 96%;
+    margin-left: 0.7rem;
+  }
 }
 @media only screen and (max-width: 450px) {
   .swiper-slide img {
@@ -1653,7 +1846,7 @@ body {
     margin-top: 0;
   }
   .main-product .product-details {
-    padding-left: .7rem;
+    padding-left: 0.7rem;
     padding-bottom: 3rem;
   }
   .main-product .product-details .pd-heading p {
@@ -1700,5 +1893,39 @@ body {
 .main-product .product-details .delivery-return {
     width: 94%;
   }
-
+  .main-product .product-details #delivery-policy .heading-c {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 1rem 0 1.4rem 0.1rem;
+    width: 90%;
+    margin-left: 1.4rem;
+  }
+  .main-product .product-details #delivery-policy .heading-c h3 {
+    font-size: 1.5rem;
+  }
+  .main-product .product-details #delivery-policy .heading-c .fa-xmark {
+    font-size: 2rem;
+    margin-top: -1.2rem;
+  }
+  .main-product .product-details #delivery-policy .dp-all-content {
+    padding: 2rem;
+    height: 95vh;
+  }
+  .main-product .product-details #delivery-policy .dp-all-content li {
+    font-size: 14.5px;
+    margin: 0.3rem 0.1rem 0 0.9rem;
+  }
+  #size-chart {
+    height: 42rem;
+  }
+  #size-chart .size-imgs .desc label {
+    font-size: 1rem;
+    padding: 1.2rem 0 1rem 0.5rem;
+  }
+  #size-chart .size-imgs .desc .foot-img p {
+    padding: 1.1rem 0 1.4rem 1rem;
+    font-size: 1.1rem;
+    border-left: none;
+  }
 }/*# sourceMappingURL=product.css.map */
