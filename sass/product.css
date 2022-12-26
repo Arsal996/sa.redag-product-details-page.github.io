@@ -1106,14 +1106,18 @@ body {
   margin: 9rem 0 0 2rem;
   gap: 1rem;
 }
+.main-product .product-img .small-imgs .small-img {
+  border: 2px solid black;
+}
 .main-product .product-img .small-imgs img {
   width: 90px;
   height: 136px;
+  cursor: pointer;
 }
-.main-product .product-img .big-img {
+.main-product .product-img .big-imgs {
   margin-top: 4rem;
 }
-.main-product .product-img .big-img img {
+.main-product .product-img .big-imgs img {
   width: 94%;
 }
 .main-product .product-details {
