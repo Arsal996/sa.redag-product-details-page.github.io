@@ -289,3 +289,35 @@ var swiper = new Swiper(".mySwiper", {
  smallImg1[3].onclick = function(){
     bigImg1.src = smallImg1[3].src;
  }
+
+//  delivery policy section js 
+
+function closeFunction() {
+  let delv = document.getElementById("delivery-policy");
+  let sc = document.getElementById("size-chart");
+  if (delv.style.display = "block") {
+    delv.style.display = "none";
+  }
+  if (sc.style.display = "block") {
+    sc.style.display = "none";
+  }
+}
+
+function deliveryPolicy() {
+  let sf = document.getElementById("delivery-policy");
+  if (sf.style.display === "block") {
+    sf.style.display = "none";
+  } else {
+    sf.style.display = "block";
+  }
+}
+
+function sizeChart() {
+  let sizeChart = document.getElementById("size-chart");
+  if (sizeChart.style.display === "block") {
+    sizeChart.style.display = "none";
+  } else {
+    sizeChart.style.display = "block";
+  }
+}
+
